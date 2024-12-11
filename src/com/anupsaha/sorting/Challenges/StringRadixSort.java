@@ -3,7 +3,7 @@ package com.anupsaha.sorting.Challenges;
 public class StringRadixSort {
 
     public static void main(String[] args) {
-        String[] stringArray = {"bcdef", "dbaqc", "abcde", "omadd", "bbbb"};
+        String[] stringArray = {"bcdef", "dbaqc", "abcde", "omadd", "bbbbb"};
 
         //do radix sort
         radixSort(stringArray, 26, 5);
