@@ -1,9 +1,12 @@
 package com.anupsaha.sorting;
 
+import com.anupsaha.Constants;
+
+import static com.anupsaha.Constants.printArray;
+
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] intArray = {20, 35, -15, 7, 55, 1, -22};
-
+        int[] intArray = new Constants().intArray;
         for(int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length; firstUnsortedIndex++) {
             int newElement = intArray[firstUnsortedIndex];
             int i;
@@ -14,11 +17,5 @@ public class InsertionSort {
         }
 
         printArray(intArray);
-    }
-    public static void printArray(int[] arr) {
-        for(int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println("\n");
     }
 }
